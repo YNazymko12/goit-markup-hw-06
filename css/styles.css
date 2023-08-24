@@ -385,7 +385,7 @@ img {
   color: var(--light-color);
 }
 .social-footer-container {
-  margin-right: 96px;
+  margin-right: 80px;
 }
 .footer-heading {
   margin-bottom: 16px;
@@ -722,7 +722,9 @@ img {
   background-color: var(--pressed-state-color);
   border: none;
   fill: var(--light-color);
-  
+}
+.checkbox-input:focus + .checkbox-label .checkbox-span {
+  border: var(--pressed-state-color)
 }
 
 
