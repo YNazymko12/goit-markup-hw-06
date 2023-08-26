@@ -61,16 +61,16 @@
       0px 2px 1px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
+    
   @media screen and (min-width: 768px) {
     .portfolio-list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
         row-gap: 72px;
         column-gap: 24px;
       }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1158px) {
     .portfolio-list {
       row-gap: 48px;
     }
@@ -86,10 +86,10 @@
   }
   @media screen and (max-width: 767px) {
     .portfolio-item {
-      margin-right: auto;
+      /* margin-right: auto;
       margin-left: auto;
       width: 100%;
-      max-width: 396px;
+      max-width: 396px; */
       overflow: hidden;
       }
     
