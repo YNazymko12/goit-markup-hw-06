@@ -1,0 +1,16 @@
+:root {
+    --white-color: #fff;
+    --accent-color: #e7e9fc;
+    --light-color: #f4f4fd;
+    --modal-bg-color: #fcfcfc;
+    --dark-color: #2e2f42;
+    --text-color: #434455;
+    --subtle-text: #8e8f99;
+    --brand-color: #4d5ae5;
+    --pressed-state-color: #404bbf;
+    --success-color: #31d0aa;
+    --color-modal-overlay: rgba(46, 47, 66, 0.4);
+    --navyblue-modal: rgba(46, 47, 66, 0.40);
+  
+    --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }

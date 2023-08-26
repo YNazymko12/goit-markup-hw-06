@@ -21,7 +21,8 @@
       rel="stylesheet"
     />
     <!-- Styles -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/index.css">
   </head>
 
   <body>
@@ -44,6 +45,12 @@
             </li>
           </ul>
         </nav>
+        <button class="mobile-menu-open-btn js-open-menu" type="button" aria-expanded="false"
+        aria-controls="mobile-menu">
+          <svg class="mobile-menu-icon" width="32" height="32">
+            <use href="./images/icons.svg#icon-menu-burger"></use>
+          </svg>
+        </button>
 
         <address class="page-address">
           <ul class="address-list list">
@@ -137,6 +144,7 @@
           <ul class="works-list list">
             <li class="works-item">
               <img
+                srcset="./images/website.jpg 1x, ./images/website@2x.jpg 2x"
                 src="./images/website.jpg"
                 alt="Website"
                 width="360"
@@ -145,6 +153,7 @@
             </li>
             <li class="works-item">
               <img
+                srcset="./images/messenger.jpg 1x, ./images/messenger@2x.jpg 2x"
                 src="./images/messenger.jpg"
                 alt="Messenger"
                 width="360"
@@ -152,7 +161,7 @@
               />
             </li>
             <li class="works-item">
-              <img src="./images/app.jpg" alt="App" width="360" height="300" />
+              <img srcset="./images/app.jpg 1x, ./images/app@2x.jpg 2x" src="./images/app.jpg" alt="App" width="360" height="300" />
             </li>
           </ul>
         </div>
@@ -165,6 +174,7 @@
           <ul class="team-list list">
             <li class="team-item">
               <img
+                srcset="./images/mark.jpg 1x, ./images/mark@2x.jpg 2x"
                 src="./images/mark.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -207,6 +217,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/tom.jpg 1x, ./images/tom@2x.jpg 2x"
                 src="./images/tom.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -249,6 +260,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/camila.jpg 1x, ./images/camila@2x.jpg 2x"
                 src="./images/camila.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -291,6 +303,7 @@
             </li>
             <li class="team-item">
               <img
+              srcset="./images/daniel.jpg 1x, ./images/daniel@2x.jpg 2x"
                 src="./images/daniel.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -342,14 +355,14 @@
           <ul class="customers-list list">
             <li class="customers-item">
               <a class="customers-link" href="">
-                <svg class="customers-icon" width="104" height="56" aria-label="Company's logo">
+                <svg class="customers-icon" aria-label="Company's logo">
                   <use href="./images/icons.svg#icon-logo-ya-and-co"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
               <a class="customers-link" href="">
-                <svg class="customers-icon" width="104" height="56" aria-label="Company's logo">
+                <svg class="customers-icon" aria-label="Company's logo">
                   <use
                     href="./images/icons.svg#icon-logo-company-tagline-here"
                   ></use>
@@ -358,28 +371,28 @@
             </li>
             <li class="customers-item">
               <a class="customers-link" href="">
-                <svg class="customers-icon" width="104" height="56" aria-label="Company's logo">
+                <svg class="customers-icon" aria-label="Company's logo">
                   <use href="./images/icons.svg#icon-logo-company"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
               <a class="customers-link" href="">
-                <svg class="customers-icon" width="104" height="56" aria-label="Company's logo">
+                <svg class="customers-icon" aria-label="Company's logo">
                   <use href="./images/icons.svg#icon-logo-foster"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
               <a class="customers-link" href="">
-                <svg class="customers-icon" width="104" height="56" aria-label="Company's logo">
+                <svg class="customers-icon" aria-label="Company's logo">
                   <use href="./images/icons.svg#icon-logo-brand"></use>
                 </svg>
               </a>
             </li>
             <li class="customers-item">
               <a class="customers-link" href="">
-                <svg class="customers-icon" width="104" height="56" aria-label="Company's logo">
+                <svg class="customers-icon" aria-label="Company's logo">
                   <use
                     href="./images/icons.svg#icon-logo-company-tag-line"
                   ></use>
@@ -531,6 +544,77 @@
         </form>
       </div>
     </div>
+    
+    <!-- Mobile menu -->
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <div class="container mobile-menu-container">
+        <button class="mobile-close js-close-menu" type="button">
+          <svg width="8" height="8">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+          <nav class="mobile-nav">
+            <ul class="mobile-menu-list list">
+                <li class="mobile-item">
+                    <a href="./index.html" class="mobile-menu-link link current">Studio</a>
+                </li>
+                <li class="mobile-item">
+                    <a href="./portfolio.html" class="mobile-menu-link link">Portfolio</a>
+                </li>
+                <li class="mobile-item">
+                    <a href="" class="mobile-menu-link link">Contacts</a>
+                </li>
+            </ul>
+          </nav>
+              <ul class="contacts-menu-list list">
+                <li class="contacts-item">
+                    <a href="tel:+110001111111" class="tel-link link">+11 (000) 111-11-11</a>
+                </li>
+                <li class="contacts-item">
+                    <a href="mailto:info@devstudio.com" class="email-link link">info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="social-mobile-list list">
+                <li class="social-item">
+                    <a href="" class="social-link">
+                        <svg class="social-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="" class="social-link">
+                        <svg class="social-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="" class="social-link">
+                        <svg class="social-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="" class="social-link">
+                        <svg class="social-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+
   </body>
 </html>
