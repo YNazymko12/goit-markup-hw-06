@@ -53,9 +53,12 @@
         transform: translateX(100%);
         transition: transform var(--transition);
     }
-    .mobile-menu-container {
-        height: 100%;
+    .mobile-nav-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
+
       .mobile-close {
         position: absolute;
         top: 24px;
